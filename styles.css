@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root
+{
+    /*Colors*/
+    --clr-font: #1a1a1a;
+    --clr-span: #de4900;
+    --clr-yellow1: #F7DF1E;
+    --clr-yellow2: #F9E756;
+    --clr-yellow3: #FBF095;
+    --clr-yellow4: #FDF8D0;
+    /*Fonts*/
+    --ff-primary: 'Roboto Mono', monospace;
+}
+
+*, ::after, ::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    font-family: var(--ff-primary);
+    color: var(--clr-font);
+    font-size: 1rem;
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    border-bottom: solid 3px var(--clr-font);
+    background: var(--clr-yellow4);
+}
+
+main
+{
+    width: calc(58vw);
+    margin: 4vh auto;
+}
+
+footer
+{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    border-top: solid 3px var(--clr-font);
+    background: var(--clr-yellow4);
+}
+
+div
+{
+    padding: 12px;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 21vw;
+}
+
+h1
+{
+    font-size: 1.8em;
+}
+
+h2
+{
+    margin-bottom: 1rem;
+}
+
+ul
+{
+    list-style: none;
+}
+
+li
+{
+    margin: 8px 0;
+}
+
+a
+{
+    line-height: calc(.875 * 1.5);
+}
+
+svg
+{
+    margin-right: 21vw;
+}
+
+span
+{
+    color: var(--clr-span);
+}
+
+/*SPECIFIC*/
+
+.logo
+{
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-left: 21vw;
+}
+
+.table
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: 33.3%;
+    padding: 0;
+}
+
+.dom
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: solid 3px var(--clr-font);
+    background: var(--clr-yellow1);
+}
+
+.storage, .media
+{
+    border-right: solid 3px var(--clr-font);
+    border-bottom: solid 3px var(--clr-font);
+}
+
+.storage
+{
+    border-top: solid 3px var(--clr-font);
+    background: var(--clr-yellow2);
+}
+
+.media
+{
+    background: var(--clr-yellow3);
+}
+
+.fetch
+{
+    grid-column: 1/4;
+    width: 100%;
+    border-left: solid 3px var(--clr-font);
+    border-right: solid 3px var(--clr-font);
+    border-bottom: solid 3px var(--clr-font);
+    background: var(--clr-yellow4);
+}
+
+.col1
+{
+    padding: 0;
+}
