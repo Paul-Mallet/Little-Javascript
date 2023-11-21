@@ -1,0 +1,28 @@
+{
+    "DOM": {
+        "random_bg": {
+            "title": "Random Background",
+            "img": "./images/ranbg.png"
+        },
+        "swapper": {
+            "title": "Card Swapper",
+            "img": "./images/swapper.png"
+        },
+        "sidebar": {
+            "title": "Sidebar",
+            "img": "./images/sbar.png"
+        },
+        "modal": {
+            "title": "Modal",
+            "img": "./images/modal.png"
+        },
+        "faq_div": {
+            "title": "FAQ Paragraph",
+            "img": "./images/faqp.png"
+        },
+        "filter_menu": {
+            "title": "Filter Menu",
+            "img": "./images/fmenu.png"
+        }
+    }
+}
