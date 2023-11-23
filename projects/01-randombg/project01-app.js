@@ -5,9 +5,10 @@ const all_tab = {
     hexa_tab: ["#000FFF", "#00F0FF", "#0F0FFF", "#FF0FFF", "#F0F0FF", "#FF0F0F"]
 }
 
-
 const section = document.querySelector('section')
-
+const bouton = document.querySelector('section .container-color-info button')
+const simple = document.querySelector('nav .container-right #btn1')
+const hexa = document.querySelector('nav .container-right #btn2')
 
 function getRandomProperty(obj) {
     const key = Object.keys(obj)   // [clé1, clé2, clé3]
@@ -18,12 +19,6 @@ function getRandomProperty(obj) {
     const randomValue = valueKey[randomIndex]
     return randomValue
 }
-
-
-const bouton = document.querySelector('section .container-color-info button')
-const simple = document.querySelector('nav .container-right #btn1')
-const hexa = document.querySelector('nav .container-right #btn2')
-
 
 bouton.addEventListener("click", () => {
     const color_value = section.style.background = getRandomProperty(all_tab)
@@ -46,7 +41,3 @@ hexa.addEventListener("click", () => {
         all_tab.rgba_tab = ["rgba(0, 255, 255)", "rgba(255, 0, 255)", "rgba(255, 255, 0)", "rgba(0, 155, 255)", "rgba(255, 155, 255)", "rgba(155, 255, 255)"]
     }
 })
-
-// Bonus
-// 1. Sauvegarder en localStorage
-// 2. Ne pas avoir à recréer les 2 propriétés après leur suppression

@@ -68,16 +68,13 @@ const menu = [
 
 const div = document.querySelector(".section-center")
 
-
 let i_values = -1
-
 
 function displayMenu (menu) {
   for (let i = 0; i < menu.length; i++) {
     i_values++
 
     const create_article = document.getElementById("menu-item-template").content.cloneNode(true)
-
     div.prepend(create_article)
 
     const img_info = document.querySelector(".photo")
@@ -94,7 +91,6 @@ function displayMenu (menu) {
   }
 }
 
-
 function removeMenu () {
   const suppr_article = document.querySelectorAll(".menu-item").forEach(article => {
     article.remove()
@@ -102,11 +98,9 @@ function removeMenu () {
   return suppr_article
 }
 
-
 window.addEventListener("DOMContentLoaded", function () {
   displayMenu(menu);
 });
-
 
 const filter_btn = document.querySelectorAll(".filter-btn").forEach(btn => {
   btn.addEventListener("click", (e) => {
@@ -135,48 +129,4 @@ const filter_btn = document.querySelectorAll(".filter-btn").forEach(btn => {
 // window.addEventListener("DOMContentLoaded", function () {
 //   diplayMenuItems(menu);
 //   displayMenuButtons();
-// });
-
-// Correction avec .map, innerHTML et .join -> créer 1 copie de menu et descend d'un niveau pour accéder aux valeurs
-
-// function diplayMenuItems(menuItems) {
-//   let displayMenu = menuItems.map(function (item) {
-//     // console.log(item);
-
-//     return `<article class="menu-item">
-//           <img src=${item.img} alt=${item.title} class="photo" />
-//           <div class="item-info">
-//             <header>
-//               <h4>${item.title}</h4>
-//               <h4 class="price">$${item.price}</h4>
-//             </header>
-//             <p class="item-text">
-//               ${item.desc}
-//             </p>
-//           </div>
-//         </article>`;
-//   });
-//   displayMenu = displayMenu.join("");
-//   // console.log(displayMenu);
-
-//   sectionCenter.innerHTML = displayMenu;
-// }
-
-
-// filterBtns.forEach(function (btn) {
-//   btn.addEventListener("click", function (e) {
-//     // console.log(e.currentTarget.dataset);
-//     const category = e.currentTarget.dataset.id;
-//     const menuCategory = menu.filter(function (menuItem) {
-//       // console.log(menuItem.category);
-//       if (menuItem.category === category) {
-//         return menuItem;
-//       }
-//     });
-//     if (category === "all") {
-//       diplayMenuItems(menu);
-//     } else {
-//       diplayMenuItems(menuCategory);
-//     }
-//   });
 // });

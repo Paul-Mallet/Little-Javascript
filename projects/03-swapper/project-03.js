@@ -1,6 +1,3 @@
-
-// surprise = Math.random (0, 1, 2)
-
 const reviews = [
     {
         img: "./03-swapper/person-1.jpg",
@@ -53,7 +50,6 @@ function showPerson (person) {
 
 // intégrer les valeurs de reviews[0] dans les elem HTML au démarrage de l'appli web
 showPerson(currentIndex)
-
 
 // si 1er prop de reviews alors affiche le dern(reviews.length-1) : if (reviews[0].name) { reviews[reviews.length-1]}
 next_btn.addEventListener("click", () => {

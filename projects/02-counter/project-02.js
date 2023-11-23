@@ -30,15 +30,9 @@ const all_btn = document.querySelectorAll('section .container .all_btn button').
     })
 })
 
-
-
-
-
-
 // const dec_btn = document.querySelector('section .container .all_btn .dec')
 // const res_btn = document.querySelector('section .container .all_btn .res')
 // const inc_btn = document.querySelector('section .container .all_btn .inc')
-
 
 // dec_btn.addEventListener("click", () => {
 //     number.textContent =  --i_number //= a la let sauvegarder et on décrémente avt la valeur actuelle 0 sinon doit clicker 2x
@@ -68,7 +62,6 @@ const all_btn = document.querySelectorAll('section .container .all_btn button').
 //         number.style.color = ""
 //     }
 // })
-
 
 // Bonus
 // 1. Selectionner tous les btn avec querySelectorAll et appliquer un event à chaque btn
