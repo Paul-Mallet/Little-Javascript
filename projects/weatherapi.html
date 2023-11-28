@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.svg">
+    <link rel="stylesheet" href="./13-weatherAPI/styles.css">
+    <title>Weather External API</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="card">
+                <div class="top">
+                    <input type="text" minlength="2" maxlength="42"/>
+                </div>
+                <div class="mid">
+                    <img src="" alt="icon" style="transform: scale(1.5);">
+                    <h1 class="temp_c"></h1>
+                    <div class="title">
+                        <h2 class="country"></h2>
+                        <h2 class="city"></h2>
+                    </div>
+                </div>
+                <div class="bot">
+                    <div class="left">
+                        <p class="wind_kph"></p>
+                        <p>Wind Speed</p>
+                    </div>
+                    <div class="right">
+                        <p class="cloud_per"></p>
+                        <p>Cloud Cover</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./13-weatherAPI/app.js" async defer></script>
+</body>
+</html>
