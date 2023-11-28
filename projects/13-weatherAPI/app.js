@@ -5,7 +5,7 @@ async function ft_get_realtime()
         method: "GET",
         credentials: "same-origin",
         headers: {
-            "X-RapidAPI-Key": "c4fb85520dmshe63aa58c8738325p14b584jsn1acac86070b9",
+            "X-RapidAPI-Key": "",
             "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
             "Content-Type": "application/json"
         }
