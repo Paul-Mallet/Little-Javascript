@@ -1,11 +1,22 @@
-async function ft_get_realtime()
+import API_KEY from "./apikey.js";
+
+const search_form = document.querySelector("form");
+const search_bar = document.querySelector("input");
+
+search_form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log(search_bar.value);
+    ft_get_realtime(search_bar.value);
+});
+
+async function ft_get_realtime(search_bar)
 {
-    const url = "https://weatherapi-com.p.rapidapi.com/current.json?q=Paris";
+    const url = `https://weatherapi-com.p.rapidapi.com/current.json?q=${search_bar}`;
     const options = {
         method: "GET",
         credentials: "same-origin",
         headers: {
-            "X-RapidAPI-Key": "",
+            "X-RapidAPI-Key": API_KEY,
             "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
             "Content-Type": "application/json"
         }
@@ -23,6 +34,8 @@ async function ft_get_realtime()
     }
 }
 
+ft_get_realtime("Paris");
+
 function ft_put_on_dom(data)
 {
     const icon = document.querySelector(".card img");
@@ -33,16 +46,9 @@ function ft_put_on_dom(data)
     const cloudC = document.querySelector(".card .cloud_per");
 
     icon.setAttribute("src", data.current.condition.icon);
-    tempC.innerText = data.current.temp_c;
-    country.innerText = data.location.country;
-    city.innerText = ", " + data.location.name;
+    tempC.innerText = data.current.temp_c + "°C";
+    country.innerText = data.location.country + ", ";
+    city.innerText = data.location.name;
     windS.innerText = data.current.wind_kph + " km/h";
     cloudC.innerText = data.current.cloud + " %";
 }
-
-function ft_wait()
-{
-    setTimeout(ft_get_realtime, 0);
-}
-
-ft_wait();
