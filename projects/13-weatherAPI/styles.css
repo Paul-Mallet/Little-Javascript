@@ -97,6 +97,11 @@ svg
     fill: var(--clr-font);
 }
 
+.card .mid .country
+{
+    margin-right: 8px;
+}
+
 .card .bot .left, .bot .right, .card .mid
 {
     flex-direction: column;

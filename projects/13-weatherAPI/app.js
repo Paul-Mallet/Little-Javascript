@@ -5,7 +5,6 @@ const search_bar = document.querySelector("input");
 
 search_form.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log(search_bar.value);
     ft_get_realtime(search_bar.value);
 });
 
@@ -26,7 +25,7 @@ async function ft_get_realtime(search_bar)
     {
         const response = await fetch(url, options);
         const data = await response.json();
-        console.log("Load success !");
+        console.log("Data loading success !");
         ft_put_on_dom(data);
     } catch (e)
     {
