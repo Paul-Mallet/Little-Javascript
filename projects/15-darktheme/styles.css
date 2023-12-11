@@ -1,0 +1,61 @@
+:root
+{
+    --clr-bg: rgb(255, 208, 208);
+    --clr-btn: rgb(197, 115, 128);
+    --clr-btn2: rgb(133, 70, 80);
+}
+
+.dark
+{
+    --clr-bg: rgb(133, 70, 80);
+    --clr-btn: rgb(197, 115, 128);
+    --clr-btn2: rgb(255, 208, 208);
+}
+
+.move
+{
+    transform: translateX(130%);
+}
+
+*, ::after, ::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--clr-bg);
+    transition: .32s;
+}
+
+main
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 96px;
+    height: 48px;
+    background: var(--clr-btn2);
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+button
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: var(--clr-btn);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transform: translateX(10%);
+    transition: .32s;
+}
