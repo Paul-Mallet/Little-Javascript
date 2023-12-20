@@ -1,35 +1,41 @@
-{
-    "Oppenheimer": {
-        "name": "Oppenheimer",
+[
+    {
+        "title": "Oppenheimer",
+        "logo": "./img/oppenheimer.svg",
+        "img": "bg-oppenheimer.jpg",
         "release_date": "19/07/2023",
-        "genre": ["Drame", "Histoire"],
+        "categories": ["Drame", "Histoire"],
         "duration": "3h 01m",
-        "resume": "En 1942, convaincus que l'Allemagne nazie est en train de développer une arme nucléaire, les États-Unis initient, dans le plus grand secret, le \"Projet Manhattan\" destiné à mettre au point la première bombe atomique de l’histoire. Pour piloter ce dispositif, le gouvernement engage J. Robert Oppenheimer, brillant physicien, qui sera bientôt surnommé \"le père de la bombe atomique\". C'est dans le laboratoire ultra-secret de Los Alamos, au cœur du désert du Nouveau-Mexique, que le scientifique et son équipe mettent au point une arme révolutionnaire dont les conséquences, vertigineuses, continuent de peser sur le monde actuel…",
-        "person": {
-            "Christopher Nolan": ["Directeur", "Rédacteur"]
-        }
+        "resume": "En 1942, convaincus que l'Allemagne nazie est en train de développer une arme nucléaire...",
+        "person": [
+            "Christopher Nolan"
+        ]
     },
-    "Super_Mario_Bros": {
-        "name": "Super Mario Bros, le film",
+    {
+        "title": "Super Mario Bros, le film",
+        "logo": "./img/mario.png",
+        "img": "bg-mario.jpg",
         "release_date": "05/04/2023",
-        "genre": ["Animation", "Familial", "Aventure", "Fantastique", "Comédie"],
+        "categories": ["Familial", "Aventure", "Fantastique"],
         "duration": "1h 32m",
-        "resume": "Alors qu’ils tentent de réparer une canalisation souterraine, Mario et son frère Luigi, tous deux plombiers, se retrouvent plongés dans un nouvel univers féerique à travers un mystérieux conduit. Mais lorsque les deux frères sont séparés, Mario s’engage dans une aventure trépidante pour retrouver Luigi. Dans sa quête, il peut compter sur l’aide du champignon Toad, habitant du Royaume Champignon, et les conseils avisés, en matière de techniques de combat, de la Princesse Peach, guerrière déterminée à la tête du Royaume. C’est ainsi que Mario réussit à mobiliser ses propres forces pour aller au bout de sa mission.",
-        "person": {
-            "Aaron Horvath": ["Directeur"],
-            "Michael Jelenic": ["Directeur"],
-            "Matthew Fogel": ["Rédacteur"]
-        }
+        "resume": "Alors qu’ils tentent de réparer une canalisation souterraine, Mario et son frère Luigi...",
+        "person": [
+            "Aaron Horvath",
+            "Michael Jelenic",
+            "Matthew Fogel"
+        ]
     },
-    "Napoleon": {
-        "name": "Napoléon",
+    {
+        "title": "Napoléon",
+        "logo": "./img/napoleon.png",
+        "img": "bg-napoleon.jpg",
         "release_date": "22/11/2023",
-        "genre": ["Drame", "Histoire", "Guerre"],
+        "categories": ["Drame", "Histoire", "Guerre"],
         "duration": "2h 38m",
-        "resume": "Fresque spectaculaire, Napoléon s'attache à l'ascension et à la chute de l'Empereur Napoléon Bonaparte. Le film retrace la conquête acharnée du pouvoir par Bonaparte à travers le prisme de ses rapports passionnels et tourmentés avec Joséphine, le grand amour de sa vie. Auteur d'épopées mémorables, Ridley Scott évoque le génie militaire ainsi que les stratégies politiques de Napoléon, tout en mettant en scène des séquences de bataille parmi les plus impressionnantes jamais filmées.",
-        "person": {
-            "Ridley Scott": ["Directeur"],
-            "David Scarpa": "Rédacteur"
-        }
+        "resume": "Fresque spectaculaire, Napoléon s'attache à l'ascension et à la chute de l'Empereur...",
+        "person": [
+            "Ridley Scott",
+            "David Scarpa"
+        ]
     }
-}
+]

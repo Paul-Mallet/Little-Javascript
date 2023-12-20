@@ -1,0 +1,117 @@
+@use "vars.scss";
+
+@mixin aligned
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+*,
+::after,
+::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    @include aligned;
+    background: vars.$color-primary;
+    width: vars.$size-w-body;
+    height: vars.$size-h-body;
+    color: vars.$color-secondary;
+    font-size: 1rem;
+    font-family: vars.$font-secondary;
+}
+
+.section
+{
+    @include aligned;
+}
+
+.container__card
+{
+    width: vars.$size-w-card;
+    margin: 0 4vw;
+    border: 1px solid rgba($color: vars.$color-secondary, $alpha: .6);
+    border-radius: 8px;
+    overflow: hidden;
+
+    .img__bg {
+        width: vars.$size-w-bg;
+        height: vars.$size-h-bg;
+        object-fit: cover;
+    }
+
+    .container__outer {
+        position: relative;
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+.container__inner
+{
+    &--primary,
+    &--secondary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &--secondary {
+        flex-direction: column;
+    }
+
+    .img__logo {
+        width: 8vw;
+    }
+
+    .inner__titles {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+}
+
+.inner__titles
+{
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: vars.$font-primary;
+    }
+}
+
+.p__resume
+{
+    font-family: vars.$font-secondary;
+    margin: 12px 0;
+}
+
+ul
+{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: vars.$color-secondary;
+    margin-bottom: 12px;
+}
+
+.inner__about
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .p__person {
+        display: flex;
+        flex-direction: column;
+    }
+}
