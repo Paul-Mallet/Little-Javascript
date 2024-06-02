@@ -1,5 +1,14 @@
 {
+  "name": "little-js",
+  "author": "paul mallet",
+  "description": "js projects using many APIs",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "start"
+  },
   "dependencies": {
     "sass": "^1.69.5"
-  }
+  },
+  "license": "MIT"
 }
